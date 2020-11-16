@@ -1,0 +1,1 @@
+print(len(''.join([str(i) for i in input().split()])))

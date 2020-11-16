@@ -1,0 +1,1 @@
+print(sum(list(map(lambda x: x ** 2, list(filter(lambda y: y % 9 == 0, [i for i in range(10, 101)]))))))

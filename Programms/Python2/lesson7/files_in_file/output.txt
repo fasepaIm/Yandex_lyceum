@@ -1,0 +1,80 @@
+sparkling_water.bat
+----------
+Summary: 941 B
+
+chard.bmp
+custard.bmp
+gelato.bmp
+plum.bmp
+tea.bmp
+----------
+Summary: 1393 GB
+
+blackberry.docx
+ox_tongue.docx
+----------
+Summary: 202 GB
+
+beef.exe
+lemon.exe
+pearl_barley.exe
+sardines.exe
+water.exe
+----------
+Summary: 663 GB
+
+avocado.jpg
+granola.jpg
+root_beer.jpg
+watermelon.jpg
+----------
+Summary: 1662 GB
+
+butter.pas
+cupcake.pas
+pumpkin.pas
+----------
+Summary: 473 MB
+
+lentil.pptx
+maple_syrup.pptx
+pearl_barley.pptx
+----------
+Summary: 473 MB
+
+patridge.py
+pear.py
+pike.py
+pikeperch.py
+pistachio.py
+----------
+Summary: 92 GB
+
+gelato.rar
+nougat.rar
+pork.rar
+----------
+Summary: 741 GB
+
+bun.txt
+cheese.txt
+ice_cream.txt
+juice.txt
+milkshake.txt
+orange.txt
+soft_drink.txt
+tea.txt
+tea.txt
+----------
+Summary: 614 GB
+
+apricot.zip
+cultured_milk_foods.zip
+jam.zip
+milk.zip
+semolina.zip
+tenderloin.zip
+wheat.zip
+----------
+Summary: 1004 GB
+
