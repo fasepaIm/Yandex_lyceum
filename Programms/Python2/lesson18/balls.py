@@ -28,5 +28,17 @@ if __name__ == '__main__':
                 pygame.draw.circle(screen, (255, 255, 255), (balls[i][0], balls[i][1]), 10)
                 balls[i][0] += v / fps * balls[i][2]
                 balls[i][1] += v / fps * balls[i][3]
+                if balls[i][0] - 10 <= 0:
+                    if balls[i][3] == 1:
+                        balls[i][3] = 1
+                    balls[i][2] = 1
+                elif balls[i][0] + 10 >= width:
+                    if balls[i][3] == -1:
+                        balls[i][3] = -1
+                    balls[i][2] = -1
+                elif balls[i][1] - 10 <= 0:
+                    balls[i][3] = 1
+                elif balls[i][1] + 10 >= height:
+                    balls[i][3] = -1
         clock.tick(fps)
         pygame.display.flip()

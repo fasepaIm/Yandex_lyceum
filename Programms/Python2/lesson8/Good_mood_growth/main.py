@@ -31,9 +31,9 @@ class MyWidget(QMainWindow):
         size = 9 * self.coeff
         qp.setPen(QColor(255, 51, 102))
         qp.drawEllipse(0, 0, size, size)
-        qp.drawEllipse(size / 5, size / 5, size / 5, size / 5)
-        qp.drawEllipse(size / 1.655, size / 5, size / 5, size / 5)
-        qp.drawArc(size / 4.3, size / 1.55, size / 1.8, size / 5.63, -30 * 16, -120 * 16)
+        qp.drawEllipse(int(size / 5), int(size / 5), int(size / 5), int(size / 5))
+        qp.drawEllipse(int(size / 1.655), int(size / 5), int(size / 5), int(size / 5))
+        qp.drawArc(int(size / 4.3), int(size / 1.55), int(size / 1.8), int(size / 5.63), -30 * 16, -120 * 16)
 
 
 if __name__ == '__main__':

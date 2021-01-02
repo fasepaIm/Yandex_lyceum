@@ -43,7 +43,7 @@ class Board:
     def get_cell(self, mouse_pos):
         x, y = mouse_pos
         cords = ((x - self.left) // self.cell_size, (y - self.top) // self.cell_size)
-        if cords[0] <= self.width - 1 and cords[1] <= self.height - 1:
+        if cords[0] <= self.width - 1 and cords[1] <= self.height - 1 and cords[0] >= 0 and cords[1] >= 0:
             return cords
         else:
             return None

@@ -14,7 +14,8 @@ class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('design.ui', self)
-        self.setFixedSize(460, 480)
+        self.setFixedSize(480, 480)
+        self.side = 300
         self.do_paint = False
         self.show_me.clicked.connect(self.paint)
 
@@ -36,7 +37,7 @@ class MyWidget(QMainWindow):
                 pen = QPen(Qt.red)
                 qp.setPen(pen)
                 x, y = 230, 300
-                side = int(self.side.text())
+                side = self.side
                 for i in range(int(self.nn.text())):
                     qp.drawLine(x - int(side / 2), y - int(side / 2), x + int(side / 2), y - int(side / 2))
                     qp.drawLine(x + int(side / 2), y - int(side / 2), x + int(side / 2), y + int(side / 2))
