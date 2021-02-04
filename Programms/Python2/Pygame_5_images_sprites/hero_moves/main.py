@@ -26,10 +26,11 @@ class Hero(pygame.sprite.Sprite):
     def __init__(self, *group):
         # НЕОБХОДИМО вызвать конструктор родительского класса Sprite. 
         # Это очень важно!!!
+        print(*group)
         super().__init__(*group)
         self.image = Hero.image
         self.rect = self.image.get_rect()
-        self.rect.x, self.rect.y = (0, 0)
+        self.rect.x, self.rect.y = (10, 30)
 
     def update(self, args):
         if pygame.key.get_pressed()[pygame.K_RIGHT]: 

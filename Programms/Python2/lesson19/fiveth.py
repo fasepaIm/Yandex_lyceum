@@ -25,18 +25,18 @@ class Board:
                 pygame.draw.rect(screen, (255, 255, 255), (x * self.cell_size + self.left, y * self.cell_size + self.top,
                                                            self.cell_size, self.cell_size), 1)
                 if self.board[y][x] == 1:
-                    pygame.draw.line(screen, (0, 0, 255), (x * self.cell_size + self.left + 2,
-                                                           y * self.cell_size + self.top + 2),
+                    pygame.draw.line(screen, (0, 0, 255), (x * self.cell_size + self.left + 3,
+                                                           y * self.cell_size + self.top + 3),
                                      (x * self.cell_size + self.left + self.cell_size - 4, 
-                                      y * self.cell_size + self.top + self.cell_size - 4), 2)
-                    pygame.draw.line(screen, (0, 0, 255), (x * self.cell_size + self.left + self.cell_size - 4,
-                                                           y * self.cell_size + self.top + 2),
-                                     (x * self.cell_size + self.left + 2, 
+                                      y * self.cell_size + self.top + self.cell_size - 5), 2)
+                    pygame.draw.line(screen, (0, 0, 255), (x * self.cell_size + self.left + self.cell_size - 5,
+                                                           y * self.cell_size + self.top + 3),
+                                     (x * self.cell_size + self.left + 3, 
                                       y * self.cell_size + self.top + self.cell_size - 4), 2)
                 elif self.board[y][x] == 2:
-                    pygame.draw.ellipse(screen, (255, 0, 0), (x * self.cell_size + self.left + 2,
-                                                              y * self.cell_size + self.top + 2,
-                                                              self.cell_size - 4, self.cell_size - 4), 2)
+                    pygame.draw.ellipse(screen, (255, 0, 0), (x * self.cell_size + self.left + 3,
+                                                              y * self.cell_size + self.top + 3,
+                                                              self.cell_size - 6, self.cell_size - 6), 2)
 
     def get_cell(self, mouse_pos):
         x, y = mouse_pos
@@ -50,10 +50,10 @@ class Board:
         if cell_coords:
             if self.board[cell_coords[1]][cell_coords[0]] == 0:
                 self.board[cell_coords[1]][cell_coords[0]] = self.runner
-            if self.runner == 1:
-                self.runner = 2
-            else:
-                self.runner = 1
+                if self.runner == 1:
+                    self.runner = 2
+                else:
+                    self.runner = 1
 
     def get_click(self, mouse_pos):
         cell = self.get_cell(mouse_pos)
