@@ -1,6 +1,6 @@
 import sys
-from drugstore_info import info_about_drugstore
 from io import BytesIO
+from drugstore_info import info_about_drugstore
 # Этот класс поможет нам сделать картинку из потока байт
 
 import requests
@@ -55,25 +55,21 @@ if not response:
 
 # Преобразуем ответ в json-объект
 json_response = response.json()
-info_about_drugstore(json_response)
 
+points = info_about_drugstore(json_response)
+print(points)
 # Собираем параметры для запроса к StaticMapsAPI:
 map_params = {
+#    "ll": address_ll,
+#    "spn": ",".join([delta, delta]),
     "l": "map",
     # добавим точку, чтобы указать найденную аптеку
-    "pt": "~".join(["{0},pm2dgl".format(org_point), "{0},pm2rdl".format(org_point_2)])
+    "pt": "~".join(points)
 }
 
 map_api_server = "http://static-maps.yandex.ru/1.x/"
 # ... и выполняем запрос
 response = requests.get(map_api_server, params=map_params)
-
-information_about_organization = {
-    "Адрес": org_address,
-    "Название": org_name,
-    "Время работы": org_hours
-}
-
 
 Image.open(BytesIO(
     response.content)).show()
