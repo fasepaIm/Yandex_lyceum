@@ -1,0 +1,4 @@
+{
+	"coc.source.omni.filetypes": ["sass", "scss", "pug"],
+	"emmet.includeLanguages": {"javascript": "javascriptreact"}
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "unicorn",
+        "habitat": "Wells",
+        "disguise": 10
+    },
+    {
+        "name": "leprechaun",
+        "habitat": "France",
+        "disguise": 8
+    },
+    {
+        "name": "dwarf",
+        "habitat": "Germany",
+        "disguise": 7
+    },
+    {
+        "name": "centaurus",
+        "habitat": "Scotland",
+        "disguise": 7
+    },
+    {
+        "name": "unicorn",
+        "habitat": "Wells",
+        "disguise": 12
+    }
+]
